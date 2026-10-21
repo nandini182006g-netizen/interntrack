@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track your internship application statistics and progress.">
+
+  <title>Analytics | InternTrack</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="navigation.js" defer></script>
+  <script src="analytics.js" defer></script>
+</head>
+
+<body data-page="analytics">
+  <div class="app-shell">
+
+    <!-- Sidebar navigation -->
+    <div id="appNavigation"></div>
+
+    <!-- Main content -->
+    <div class="app-main">
+      <main class="page-content">
+
+        <header class="page-heading">
+          <h1>Application Analytics 📊</h1>
+          <p>Understand your internship search and track your progress.</p>
+        </header>
+
+        <!-- Summary cards -->
+        <section class="analytics-summary">
+
+          <article class="analytics-card">
+            <p>Total Applications</p>
+            <h2 id="analyticsTotal">0</h2>
+          </article>
+
+          <article class="analytics-card">
+            <p>Active Applications</p>
+            <h2 id="analyticsActive">0</h2>
+          </article>
+
+          <article class="analytics-card">
+            <p>Interviews</p>
+            <h2 id="analyticsInterviews">0</h2>
+          </article>
+
+          <article class="analytics-card">
+            <p>Selection Rate</p>
+            <h2 id="analyticsRate">0%</h2>
+          </article>
+
+        </section>
+
+        <!-- Analytics details -->
+        <section class="feature-grid analytics-layout">
+
+          <article class="feature-card">
+            <h2>Applications by Status</h2>
+            <p class="analytics-description">
+              See how your applications are progressing.
+            </p>
+            <div id="statusBreakdown" class="status-breakdown"></div>
+          </article>
+
+          <article class="feature-card">
+            <h2>Search Insights</h2>
+            <p class="analytics-description">
+              A quick overview of your internship journey.
+            </p>
+            <div id="searchInsights"></div>
+          </article>
+
+        </section>
+
+        <p class="analytics-note">
+          Your statistics are calculated from applications saved in this browser.
+        </p>
+
+      </main>
+    </div>
+
+  </div>
+</body>
+</html>

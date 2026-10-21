@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage your InternTrack settings and data.">
+  <title>Settings | InternTrack</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="navigation.js" defer></script>
+  <script src="settings.js" defer></script>
+</head>
+
+<body data-page="settings">
+  <div class="app-shell">
+    <div id="appNavigation"></div>
+
+    <div class="app-main">
+      <main class="page-content">
+        <header class="page-heading">
+          <h1>Settings ⚙️</h1>
+          <p>Manage your preferences and internship data.</p>
+        </header>
+
+        <section class="settings-card">
+          <h2>Appearance</h2>
+          <p>Current theme: Light with green accents.</p>
+          <p class="settings-help">
+            Your existing theme is preserved across all pages.
+          </p>
+        </section>
+
+        <section class="settings-card">
+          <h2>Data management</h2>
+          <p>Export a backup of your saved internship applications.</p>
+          <div class="settings-actions">
+            <button id="exportData" class="primary-btn" type="button">
+              Export applications
+            </button>
+          </div>
+          <p id="exportMessage" class="settings-message" role="status"></p>
+        </section>
+
+        <section class="settings-card">
+          <h2>Storage information</h2>
+          <p>
+            Applications saved in this browser:
+            <strong id="savedApplicationCount">0</strong>
+          </p>
+          <p class="settings-help">
+            Your profile is stored separately from your applications.
+          </p>
+        </section>
+
+        <section class="settings-card danger-card">
+          <h2>Danger zone</h2>
+          <p>
+            This permanently deletes all internship applications saved by
+            InternTrack in this browser. Your profile will not be deleted.
+          </p>
+          <div class="settings-actions">
+            <button id="clearApplications" class="danger-btn" type="button">
+              Delete all applications
+            </button>
+          </div>
+          <p id="deleteMessage" class="settings-message" role="status"></p>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5faf5">
+  <title>Welcome to InternTrack</title>
+  <link rel="stylesheet" href="auth.css">
+  <script src="auth.js" defer></script>
+</head>
+
+<body>
+  <div class="background-shape shape-one"></div>
+  <div class="background-shape shape-two"></div>
+  <div class="background-shape shape-three"></div>
+
+  <main class="auth-page">
+    <a href="login.html" class="brand" aria-label="InternTrack home">
+      <span class="brand-icon">✳</span>
+      <span>Intern<span class="brand-highlight">Track</span></span>
+    </a>
+
+    <section class="auth-card" id="authCard">
+      <div class="auth-heading">
+        <div class="welcome-icon" aria-hidden="true">🌱</div>
+        <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1 id="formHeading">Welcome back!</h1>
+        <p class="subtitle" id="formSubtitle">
+          Your career journey is waiting for you.
+        </p>
+      </div>
+
+      <div class="form-switch" role="tablist" aria-label="Account options">
+        <button
+          type="button"
+          class="switch-button active"
+          id="loginTab"
+          role="tab"
+          aria-selected="true"
+          aria-controls="loginForm"
+        >
+          Login
+        </button>
+
+        <button
+          type="button"
+          class="switch-button"
+          id="signupTab"
+          role="tab"
+          aria-selected="false"
+          aria-controls="signupForm"
+        >
+          Create account
+        </button>
+      </div>
+
+      <div class="forms-window">
+        <form id="loginForm" class="auth-form" novalidate>
+          <div class="field">
+            <label for="loginEmail">Email address</label>
+            <input
+              type="email"
+              id="loginEmail"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label for="loginPassword">Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            >
+          </div>
+
+          <button type="submit" class="primary-button" id="loginButton">
+            Login to InternTrack <span aria-hidden="true">→</span>
+          </button>
+
+          <p class="form-message" id="loginMessage" role="status" aria-live="polite"></p>
+
+          <p class="form-footer">
+            New to InternTrack?
+            <button type="button" class="text-button" id="showSignup">
+              Create an account
+            </button>
+          </p>
+        </form>
+
+        <form id="signupForm" class="auth-form hidden-form" novalidate>
+          <div class="field">
+            <label for="signupName">Full name</label>
+            <input
+              type="text"
+              id="signupName"
+              name="name"
+              placeholder="Enter your name"
+              autocomplete="name"
+              maxlength="80"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label for="signupEmail">Email address</label>
+            <input
+              type="email"
+              id="signupEmail"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label for="signupPassword">Create password</label>
+            <input
+              type="password"
+              id="signupPassword"
+              name="password"
+              placeholder="At least 8 characters"
+              autocomplete="new-password"
+              minlength="8"
+              maxlength="72"
+              required
+            >
+            <p class="field-hint">Use at least 8 characters.</p>
+          </div>
+
+          <button type="submit" class="primary-button" id="signupButton">
+            Create my account <span aria-hidden="true">→</span>
+          </button>
+
+          <p class="form-message" id="signupMessage" role="status" aria-live="polite"></p>
+
+          <p class="form-footer">
+            Already have an account?
+            <button type="button" class="text-button" id="showLogin">
+              Login instead
+            </button>
+          </p>
+        </form>
+      </div>
+
+      <div class="auth-bottom">
+        <span class="bottom-leaf">✦</span>
+        One step closer to your dream opportunity.
+      </div>
+    </section>
+
+    <p class="page-footer">Made for your next big opportunity <span>♥</span></p>
+  </main>
+</body>
+</html>

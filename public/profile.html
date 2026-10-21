@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage your InternTrack career profile.">
+
+  <title>My Profile | InternTrack</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="navigation.js" defer></script>
+  <script src="profile.js" defer></script>
+</head>
+
+<body data-page="profile">
+  <div class="app-shell">
+
+    <div id="appNavigation"></div>
+
+    <div class="app-main">
+      <main class="page-content">
+
+        <header class="page-heading">
+          <h1>My Profile 👋</h1>
+          <p>Keep your career information organized in one place.</p>
+        </header>
+
+        <section class="profile-card">
+          <div class="profile-heading">
+            <div class="profile-avatar" id="profileAvatar">IT</div>
+            <div>
+              <h2 id="profileDisplayName">Your Name</h2>
+              <p id="profileDisplayEmail">your@email.com</p>
+              <p id="profileDisplayGoal">Your next opportunity starts here.</p>
+            </div>
+          </div>
+
+          <form id="profileForm">
+            <div class="profile-form-grid">
+
+              <div class="field">
+                <label for="fullName">Full name *</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Enter your name"
+                  maxlength="80"
+                  required
+                >
+              </div>
+
+              <div class="field">
+                <label for="college">College / University</label>
+                <input
+                  type="text"
+                  id="college"
+                  placeholder="Your college name"
+                  maxlength="120"
+                >
+              </div>
+
+              <div class="field">
+                <label for="degree">Degree / Course</label>
+                <input
+                  type="text"
+                  id="degree"
+                  placeholder="e.g. B.Tech AIML"
+                  maxlength="100"
+                >
+              </div>
+
+              <div class="field">
+                <label for="graduationYear">Graduation year</label>
+                <input
+                  type="number"
+                  id="graduationYear"
+                  placeholder="e.g. 2028"
+                  min="2020"
+                  max="2100"
+                >
+              </div>
+
+              <div class="field full-width">
+                <label for="skills">Skills</label>
+                <input
+                  type="text"
+                  id="skills"
+                  placeholder="e.g. HTML, CSS, JavaScript, Python"
+                  maxlength="300"
+                >
+                <p class="profile-help">Separate your skills with commas.</p>
+              </div>
+
+              <div class="field full-width">
+                <label for="careerGoal">Career goal</label>
+                <textarea
+                  id="careerGoal"
+                  rows="4"
+                  maxlength="500"
+                  placeholder="What kind of role are you working toward?"
+                ></textarea>
+              </div>
+
+            </div>
+
+            <div class="profile-actions">
+              <button type="submit" class="primary-btn">
+                Save Profile
+              </button>
+
+              <button type="button" id="resetProfile" class="secondary-btn">
+                Reset Form
+              </button>
+            </div>
+
+            <p
+              id="profileMessage"
+              class="profile-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </section>
+
+        <section class="feature-card profile-skills-card">
+          <h2>My Skills</h2>
+          <p class="profile-help">
+            Your skills will appear here after you save your profile.
+          </p>
+          <div id="skillsDisplay" class="skills-list"></div>
+        </section>
+
+        <p class="analytics-note">
+          Profile information is currently saved in this browser only.
+        </p>
+
+      </main>
+    </div>
+
+  </div>
+</body>
+</html>

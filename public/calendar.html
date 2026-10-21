@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar | InternTrack</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="calendar.js" defer></script>
+  <script src="navigation.js" defer></script>
+</head>
+<body data-page="calendar">
+  <div class="app-shell">
+    <div id="appNavigation"></div>
+    <div class="app-main">
+      
+<main class="page-content">
+  <header class="page-heading">
+    <h1>Deadline Calendar 📅</h1>
+    <p>Never miss an internship application deadline.</p>
+  </header>
+
+  <section class="calendar-card">
+    <div class="calendar-toolbar">
+      <button id="prevMonth" class="secondary-btn" type="button">
+        ← Previous
+      </button>
+
+      <h2 id="monthTitle">October 2026</h2>
+
+      <button id="nextMonth" class="secondary-btn" type="button">
+        Next →
+      </button>
+    </div>
+
+    <div class="calendar-weekdays">
+      <span>Sun</span>
+      <span>Mon</span>
+      <span>Tue</span>
+      <span>Wed</span>
+      <span>Thu</span>
+      <span>Fri</span>
+      <span>Sat</span>
+    </div>
+
+    <div id="calendarDays" class="calendar-days"></div>
+
+    <div class="calendar-legend">
+      <span class="deadline-dot"></span>
+      <span>Internship deadline</span>
+    </div>
+  </section>
+
+  <section class="feature-card selected-date-card">
+    <h2 id="selectedDateTitle">Select a date</h2>
+    <div id="deadlineDetails">
+      <p>Click a date on the calendar to view its deadlines.</p>
+    </div>
+
+        <header class="page-heading">
+          <h1>Deadline Calendar</h1>
+          <p>Keep upcoming internship deadlines in view.</p>
+        </header>
+        <section class="feature-grid">
+          <article class="feature-card">
+            <h2>📅 Your calendar</h2>
+            <p>The interactive monthly calendar will be built in the next stage.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

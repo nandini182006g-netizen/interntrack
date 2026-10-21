@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your personal internship management dashboard.">
+  <title>Dashboard | InternTrack</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="navigation.js" defer></script>
+  <script src="dashboard.js" defer></script>
+</head>
+<body data-page="dashboard">
+  <div class="app-shell">
+    <div id="appNavigation"></div>
+
+    <div class="app-main">
+      <main class="page-content">
+        <header class="page-heading">
+          <h1>Your dashboard 🌿</h1>
+          <p>Keep track of your progress and your next opportunity.</p>
+        </header>
+
+        <section class="dashboard">
+          <div class="stat-card total">
+            <h3>Total Applications</h3>
+            <p id="totalCount">0</p>
+          </div>
+          <div class="stat-card">
+            <h3>Applied</h3>
+            <p id="appliedCount">0</p>
+          </div>
+          <div class="stat-card">
+            <h3>Assessments</h3>
+            <p id="assessmentCount">0</p>
+          </div>
+          <div class="stat-card">
+            <h3>Interviews</h3>
+            <p id="interviewCount">0</p>
+          </div>
+          <div class="stat-card">
+            <h3>Selected</h3>
+            <p id="selectedCount">0</p>
+          </div>
+          <div class="stat-card">
+            <h3>Rejected</h3>
+            <p id="rejectedCount">0</p>
+          </div>
+        </section>
+
+        <section class="feature-grid" style="margin-top: 28px;">
+          <article class="feature-card">
+            <h2>📌 Your next step</h2>
+            <p>Keep your applications updated and follow up on upcoming opportunities.</p>
+            <p style="margin-top: 16px;">
+              <a href="applications.html">Manage applications →</a>
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h2>📅 Upcoming deadlines</h2>
+            <p id="upcomingDeadlines">Loading deadlines...</p>
+            <p style="margin-top: 16px;">
+              <a href="calendar.html">View calendar →</a>
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track and manage your internship applications in one place.">
+  <title>InternTrack | Internship Tracker</title>
+  <link rel="stylesheet" href="style.css">
+<script src="navigation.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+    <body data-page="applications">
+  <div class="app-shell">
+    <div id="appNavigation"></div>
+    <div class="app-main">
+  <header class="header">
+    <div class="header-content">
+      <div>
+        <h1>InternTrack</h1>
+        <p>Your internship journey, organized.</p>
+      </div>
+      <span class="header-tag">MY CAREER DASHBOARD</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="dashboard">
+      <div class="stat-card total">
+        <h3>Total Applications</h3>
+        <p id="totalCount">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Applied</h3>
+        <p id="appliedCount">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Assessment</h3>
+        <p id="assessmentCount">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Interviews</h3>
+        <p id="interviewCount">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Selected</h3>
+        <p id="selectedCount">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Rejected</h3>
+        <p id="rejectedCount">0</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">APPLICATION MANAGER</p>
+          <h2 id="formTitle">Add an Internship</h2>
+        </div>
+      </div>
+
+      <form id="internshipForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="company">Company name *</label>
+            <input id="company" type="text"
+              placeholder="e.g. Microsoft" required>
+          </div>
+
+          <div class="field">
+            <label for="role">Job role *</label>
+            <input id="role" type="text"
+              placeholder="e.g. Web Developer Intern" required>
+          </div>
+
+          <div class="field">
+            <label for="applicationDate">Application date *</label>
+            <input id="applicationDate" type="date" required>
+          </div>
+
+          <div class="field">
+            <label for="deadline">Application deadline</label>
+            <input id="deadline" type="date">
+          </div>
+
+          <div class="field full-width">
+            <label for="jobLink">Job application link</label>
+            <input id="jobLink" type="url"
+              placeholder="https://example.com/careers">
+          </div>
+
+          <div class="field full-width">
+            <label for="status">Application status</label>
+            <select id="status">
+              <option value="Applied">Applied</option>
+              <option value="Assessment">Assessment</option>
+              <option value="Interview">Interview</option>
+              <option value="Selected">Selected</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="submitBtn" class="primary-btn">
+            Add Application
+          </button>
+          <button type="button" id="cancelEdit"
+            class="secondary-btn" hidden>
+            Cancel Edit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="applications-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR JOB SEARCH</p>
+          <h2>Your Applications</h2>
+        </div>
+        <span id="resultCount" class="result-count">0 applications</span>
+      </div>
+
+      <div class="filters">
+        <div class="field">
+          <label for="searchInput">Search</label>
+          <input id="searchInput" type="search"
+            placeholder="Search company or role...">
+        </div>
+
+        <div class="field">
+          <label for="filterStatus">Filter by status</label>
+          <select id="filterStatus">
+            <option value="All">All Statuses</option>
+            <option value="Applied">Applied</option>
+            <option value="Assessment">Assessment</option>
+            <option value="Interview">Interview</option>
+            <option value="Selected">Selected</option>
+            <option value="Rejected">Rejected</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="applicationList" class="application-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>InternTrack · Built with HTML, CSS and JavaScript</p>
+  </footer>
+      </div>
+  </div>
+</body>
+</html>
