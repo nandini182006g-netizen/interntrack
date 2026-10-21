@@ -1,37 +1,63 @@
-# InternTrack
+# InternTrack — Internship Application Tracker
 
-A full-stack web application for organizing and tracking internship applications.
+A full-stack web application to organize internship applications, track their progress, and manage important deadlines in one place.
 
-## Features
+## 🚀 Live Demo
 
-- User signup, login, and logout
-- Secure password hashing
-- Profile management with persistent storage
-- Add, edit, and delete internship applications
-- Track application statuses: Applied, Assessment, Interview, Selected, and Rejected
-- Dashboard statistics and upcoming deadlines
-- Calendar and analytics pages
-- Responsive interface
+**Live Website:** https://interntrack-r07h.onrender.com
 
-## Tech Stack
+## ✨ Features
+
+- **User Authentication:** Sign up, log in, and log out securely.
+- **Dashboard:** View application statistics and upcoming deadlines.
+- **Application Management:** Add, view, edit, and delete internship applications.
+- **Status Tracking:** Track applications as Applied, Assessment, Interview, Selected, or Rejected.
+- **Profile Management:** Save and update your profile information.
+- **Search and Filtering:** Find applications efficiently.
+- **Responsive Interface:** Use the application across desktop and mobile screens.
+
+## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
-- **Database:** SQLite with better-sqlite3
-- **Authentication:** Express sessions and bcryptjs
+- **Database:** SQLite
+- **Authentication:** Express Sessions, bcrypt.js
+- **Tools and Deployment:** Git, GitHub, Render
 
-## Run Locally
+## 📸 Screenshots
 
-1. Install [Node.js](https://nodejs.org/).
-2. Clone this repository.
-3. Open a terminal in the project directory.
-4. Install dependencies:
+_Add screenshots of the dashboard, applications page, and profile page here._
+
+## 💻 Run Locally
+
+### Prerequisites
+
+- Node.js and npm installed
+- Git installed (optional, for cloning the repository)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nandini182006g-netizen/interntrack.git
+   ```
+
+2. Open the project folder:
+
+   ```bash
+   cd interntrack
+   ```
+
+3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-5. Start the application:
+4. Configure a strong `SESSION_SECRET` environment variable before running the app.
+
+5. Start the server:
 
    ```bash
    npm start
@@ -39,20 +65,23 @@ A full-stack web application for organizing and tracking internship applications
 
 6. Open `http://localhost:3000` in your browser.
 
-## Security
+## 🔐 Security Notes
 
-- Passwords are hashed before storage.
-- Protected routes require authentication.
-- User application data is scoped to the authenticated account.
-- Environment secrets and local database files should not be committed to Git.
+- Passwords are hashed using bcrypt.js.
+- Authenticated API routes protect user-specific data.
+- Database files and environment secrets should not be committed to GitHub.
 
-## Future Improvements
+## 📚 What I Learned
 
-- Production deployment
-- Persistent production database
-- Automated tests
-- Improved analytics and reporting
+- Building REST API endpoints with Express.js
+- Implementing user authentication and session handling
+- Performing database operations with SQLite
+- Connecting frontend JavaScript to backend APIs
+- Using Git and GitHub for version control
+- Deploying a Node.js application on Render
 
----
+## 👩‍💻 Author
 
-Created as a full-stack web development portfolio project.
+**Nandini Gupta**
+
+GitHub: [nandini182006g-netizen](https://github.com/nandini182006g-netizen)
